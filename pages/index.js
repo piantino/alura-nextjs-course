@@ -1,9 +1,9 @@
 import Link from "../src/components/Link";
 
-function Title({children, as }) {
+function Title({ children, as }) {
     const Tag = as;
     return (
-        <> 
+        <>
             <Tag>{children}</Tag>
             <style jsx>{`
                 ${Tag} {
@@ -16,9 +16,11 @@ function Title({children, as }) {
 
 export default function HomePage() {
     return (
-        <div>
-            <Title as="h1">Alura Cases - Home</Title>
-            <Link href="/faq">Ir para FAQ</Link>
-        </div>
+        <>
+            <div>
+                <Title as="h1">Alura Cases - Home</Title>
+                <Link href="/faq">Ir para FAQ</Link>
+            </div>
+        </>
     )
 }
