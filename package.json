@@ -1,0 +1,27 @@
+{
+  "name": "alura-cases",
+  "version": "0.0.1",
+  "description": "Curso Next.js",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/piantino/alura-nextjs-course.git"
+  },
+  "author": "Andre Piantino",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/piantino/alura-nextjs-course/issues"
+  },
+  "homepage": "https://github.com/piantino/alura-nextjs-course#readme",
+  "dependencies": {
+    "next": "^13.1.4",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  }
+}
