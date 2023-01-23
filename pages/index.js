@@ -1,8 +1,10 @@
+import Link from "../src/components/Link";
+
 export default function HomePage() {
     return (
         <div>
             <h1>Alura Cases - Home</h1>
-            <a href="/faq">Ir para FAQ</a>
+            <Link href="/faq">Ir para FAQ</Link>
         </div>
     )
 }

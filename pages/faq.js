@@ -1,8 +1,10 @@
+import Link from "../src/components/Link";
+
 export default function FaqPage() {
     return (
         <div>
             <h1>Alura Cases - Páginas e perguntas FAQ</h1>
-            <a href="/">Ir para FAQ</a>
+            <Link href="/">Ir para Home</Link>
         </div>
     )
 }
