@@ -1,4 +1,4 @@
-import Link from "../src/components/Link";
+import FAQScreen from "../src/screens/FaqScreen";
 
 // Roda só rodante o build
 // Já o getServerSideProps roda quando acessa a página
@@ -16,24 +16,5 @@ export async function getStaticProps(context) {
     }
 }
 
-export default function FaqPage({faq}) {
+export default FAQScreen; 
 
-    return (
-        <>
-            <div>
-                <h1>Alura Cases - Páginas e perguntas FAQ</h1>
-                <Link href="/">Ir para Home</Link>
-            </div>
-            <ul>
-                {faq.map(({answer, question}) => (
-                    <li key={question}>
-                        <article>
-                            <h2>{question}</h2>
-                            <p>{answer}</p>
-                        </article>
-                    </li>
-                ))}
-            </ul>
-        </>
-    )
-}
