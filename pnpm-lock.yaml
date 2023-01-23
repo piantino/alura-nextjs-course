@@ -4,6 +4,7 @@ specifiers:
   '@fortawesome/fontawesome-svg-core': ^6.2.1
   '@fortawesome/free-solid-svg-icons': ^6.2.1
   '@fortawesome/react-fontawesome': ^0.2.0
+  '@next/font': ^13.1.5
   next: ^13.1.4
   react: ^18.2.0
   react-dom: ^18.2.0
@@ -12,6 +13,7 @@ dependencies:
   '@fortawesome/fontawesome-svg-core': 6.2.1
   '@fortawesome/free-solid-svg-icons': 6.2.1
   '@fortawesome/react-fontawesome': 0.2.0_cebe167be39b298c5652d6c4a48e22a6
+  '@next/font': 13.1.5
   next: 13.1.4_react-dom@18.2.0+react@18.2.0
   react: 18.2.0
   react-dom: 18.2.0_react@18.2.0
@@ -53,6 +55,10 @@ packages:
 
   /@next/env/13.1.4:
     resolution: {integrity: sha512-x7ydhMpi9/xX7yVK+Fw33OuwwQWVZUFRxenK3z89fmPzQZyUk35Ynb+b7JkrhfRhDIFFvvqpzVSXeseSlBAw7A==}
+    dev: false
+
+  /@next/font/13.1.5:
+    resolution: {integrity: sha512-6M5R6yC3JkdJiqo/YJxDp6+0vDn0smXOAzl8uHt4qmDS2u53ji/19K0HM51d+5kg8xntDi+N2hw7YjaU9inkNA==}
     dev: false
 
   /@next/swc-android-arm-eabi/13.1.4:
