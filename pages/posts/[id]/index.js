@@ -1,6 +1,10 @@
 import { useRouter } from "next/router"
 import Link from "../../../src/components/Link";
 import posts from '../../../data/posts.json'
+import dynamic from "next/dynamic";
+import { useState } from "react";
+
+const YouTubeVideo = dynamic(() => import('../../../src/components/YouTubeVideo'))
 
 export async function getStaticPaths() {
 
@@ -24,6 +28,7 @@ export async function getStaticProps(context) {
 
 export default function PostPage(props) {
     const router = useRouter();
+    const [isVideoVisible, setVideoVisible] = useState(false)
 
     return (
         <>
@@ -37,6 +42,9 @@ export default function PostPage(props) {
                 </li>
             </ul>
             <p>{props.text}</p>
+            
+            {!isVideoVisible && <button onClick={e => setVideoVisible(true)}>Mostrar vídeo</button>}
+            {isVideoVisible && <YouTubeVideo url="https://www.youtube.com/embed/BkHkHFi12IY"></YouTubeVideo>}
         </>
     )
 }
