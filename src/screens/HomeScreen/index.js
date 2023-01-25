@@ -161,6 +161,18 @@ export default function HomeScreen() {
                   },
                 }}
               >
+                <Box
+                  as="form"
+                  action="#"
+                  styleSheet={{
+                    display: 'flex',
+                    gap: '10px',
+                    marginBottom: '20px'
+                  }}
+                >
+                  <Link href='/private/'>Área restrita</Link>
+                  <Link href='/posts/1'>Post 1</Link>
+                </Box>
                 <Box>
                   <Link
                     href="/faq"
