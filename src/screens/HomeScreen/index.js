@@ -171,6 +171,7 @@ export default function HomeScreen() {
                   }}
                 >
                   <Link href='/private/'>Área restrita</Link>
+                  <Link href='/auth0/'>Auth0</Link>
                   <Link href='/posts/1'>Post 1</Link>
                 </Box>
                 <Box>
